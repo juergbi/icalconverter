@@ -1,0 +1,24 @@
+Name: icalconverter
+Summary: icalconverter
+Version: 0.1
+Release: 1
+Group: Applications/System
+URL: http://example.org/
+License: BSD
+Sources:
+- '%{name}-%{version}.tar.bz2'
+Description: |-
+  Import and export iCalendar files.
+Configure: none
+Builder: qtc5
+PkgConfigBR:
+- Qt5Core
+Requires:
+- kcalcore-qt5
+- mkcal-qt5
+Files:
+- /usr/bin
+- '%{_bindir}'
+- 
+- /usr/bin/
+PkgBR: [kcalcore-qt5-devel, mkcal-qt5-devel]
